@@ -1,0 +1,25 @@
+K8s Architecture:
+=================
+
+    - Master
+    - Slave
+    - 
+
+
+    Worker Nodes:
+    -------------
+
+        - Container Runtime
+        - Kubelet
+        - KubeProxy
+
+
+    Master Node:
+    ===========
+
+         - API Server
+         - Control Manager
+         - Scheduler
+         - etcd
+
+        
