@@ -1,0 +1,77 @@
+Intro to Kubernetes:
+---------------------
+
+- Open Source Container Orchestration tool
+- Developed by Google
+- Helps you managed containerized apps
+- Trend from monolith to Microservices
+- Increased use of containers
+- 
+
+Features:
+---------
+
+     - High Availability
+     - Scalability
+
+
+
+Worker Components:
+-------------------
+
+     Pod -
+          - smallest unit of K8s
+          - Usually one app per Pod
+          - Each Pod gets its own IP Address
+          - New IP Address on Creation
+
+     
+     Service:
+          - Static IP address attached to each Pod
+          - lifecycle of PODS and Service are not connected
+          - External Service
+          - Internal Service
+          - Also a Load Balancer
+
+     Ingress:
+     --------
+
+          - Connect to Internet
+          - Route traffic into Cluster
+
+
+     ConfigMap:
+     ----------
+
+          - Configuration of the your app
+          - DB URL Details
+          - Don't put credentials into ConfigMap
+
+     Secrets:
+     --------
+
+          - Stores secret credentials
+          - Stored in base64 encoded format
+
+
+     Volumes:
+     ---------
+
+           - Data Storage
+           - Attaches physical storage to a PODS
+           - Store on local machine
+     
+
+     Deployment and Static Set:
+     -------------------------
+
+          - Blueprint of Pods are called Deployments
+     
+
+     Stateful Sets:
+     ===============
+
+          - DB cannot be replicated
+          - for stateful apps
+          - for DB's
+     
